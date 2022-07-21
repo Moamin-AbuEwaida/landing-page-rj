@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 80px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+nav ul li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  margin: 5px;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  background: #aaa;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: medium;
+  color: rgb(111, 111, 111);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cta {
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.hire {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.hire:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.project {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.project:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+}
+
+.me-img {
+  border: 5px solid #000;
+  border-bottom-left-radius: 50%;
+}
+
+.img-bg {
+  width: 350px;
+  height: 450px;
+  background-color: #000;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  border-bottom-left-radius: 50%;
+  z-index: -1;
+}
+
+@media screen and (min-width: 800px) {
+  nav ul li {
+    font-size: 1.4rem;
+  }
+  .content {
+    flex-direction: row;
+    margin: 80px;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .cta {
+    padding: 20px 30px;
+    font-size: 1.2rem;
+  }
+  .buttons {
+    margin: 0;
+  }
+}
